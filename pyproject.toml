@@ -7,7 +7,13 @@ requires-python = ">=3.12,<3.13"
 dependencies = ["plt"]
 
 [dependency-groups]
-dev = ["ipykernel>=6.29.5", "ipywidgets>=8.1.7", "jupyter>=1.1.1"]
+dev = [
+    "hf-transfer>=0.1.9",
+    "huggingface-hub[cli]>=0.33.0",
+    "ipykernel>=6.29.5",
+    "ipywidgets>=8.1.7",
+    "jupyter>=1.1.1",
+]
 
 [tool.uv.sources]
 torch = [
